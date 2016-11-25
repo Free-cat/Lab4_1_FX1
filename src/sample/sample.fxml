@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main">
+   <children>
+      <TextField fx:id="text" layoutX="10.0" layoutY="14.0" prefHeight="25.0" prefWidth="580.0" promptText="Введите текст" />
+      <Button fx:id="parse" layoutX="399.0" layoutY="46.0" mnemonicParsing="false" onAction="#parse" text="Найти" />
+      <Button fx:id="delete" layoutX="455.0" layoutY="46.0" mnemonicParsing="false" onAction="#delete" text="Удалить" />
+      <Button fx:id="add" layoutX="521.0" layoutY="46.0" mnemonicParsing="false" onAction="#add" text="Добавить" />
+      <TableView fx:id="table" layoutX="10.0" layoutY="80.0" prefHeight="310.0" prefWidth="580.0">
+        <columns>
+          <TableColumn fx:id="name" prefWidth="123.0" text="Слово" />
+          <TableColumn fx:id="texts" prefWidth="456.0" text="Определение" />
+        </columns>
+      </TableView>
+      <Button fx:id="open" defaultButton="true" layoutX="10.0" layoutY="46.0" mnemonicParsing="false" onAction="#open" text="Показать все" />
+   </children>
+</AnchorPane>
